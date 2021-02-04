@@ -7,13 +7,12 @@ import { MdbCollapseDirective } from 'mdb-angular-ui-kit';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'shootingintospace';
+  title = 'shootinginto.space';
 
   @ViewChild('collapse')
   collapse!: MdbCollapseDirective;
 
   ngAfterViewInit(): void {
-    this.title = 'my title goes here';
     this.collapse.toggle();
   }
 }
