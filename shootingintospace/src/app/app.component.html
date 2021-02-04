@@ -1,3 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" mb-0 h1 href="#">{{title}}</a>
+
+    <button class="navbar-toggler"
+      type="button"
+      (click)="basicCollapse.toggle()"
+      aria-controls="toggleThingTest"
+      aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- What is the hashtag for? -->
+    <div class="collapse navbar-collapse"
+      id="toggleThingTest"
+      mdbCollapse
+      #basicCollapse="mdbCollapse">
+      <a>test</a>
+      <a>test</a>
+      <a>test</a>
+      <a>test</a>
+    </div>
+  </div>
+</nav>
+
 <div class="container">
   <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
     <div class="text-center">
