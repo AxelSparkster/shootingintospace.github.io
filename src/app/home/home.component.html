@@ -1,10 +1,12 @@
 
 <div class="container">
     <div class="d-flex justify-content-center align-items-center" style="height: 100vh">
-      <div class="card d-flex justify-content-center align-items-center
-        animated tada">
-        <h5 class="mb-3">main container's here</h5>
-        <p class="mb-3">(I really need to make a good title for this don't I)</p>
+      <div class="card-container" [@tada]="animState" (@tada.done)="animDone()">
+        <div class="card d-flex justify-content-center align-items-center">
+          <h5 class="mb-3">main container's here</h5>
+          <p class="mb-3">(I really need to make a good title for this don't I)</p>
+          <button type="button" class="btn btn-primary" (click)="toggleAnimation()">{{animating ? "Okay, Please Stop That" : "Poke Me" }}</button>
+        </div>
       </div>
     </div>
   </div>
