@@ -30,6 +30,6 @@
   </div>
 </nav>
 
-<main>
-  <router-outlet #o="outlet"></router-outlet>
-</main>
+<div [@routeAnimation]="prepareRoute(outlet)">
+	<router-outlet #outlet="outlet"></router-outlet>
+</div>

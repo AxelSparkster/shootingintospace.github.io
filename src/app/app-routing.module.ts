@@ -8,15 +8,18 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    component: HomeComponent
+    component: HomeComponent,
+    data: { animation: 'home' },
   },
   {
     path: 'page1',
-    component: Page1Component
+    component: Page1Component,
+    data: { animation: 'page1' }
   },
   {
     path: 'page2',
-    component: Page2Component
+    component: Page2Component,
+    data: { animation: 'page2' }
   },
 
   // just redirect home if it's not found
