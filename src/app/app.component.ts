@@ -11,8 +11,4 @@ export class AppComponent {
 
   @ViewChild('collapse')
   collapse!: MdbCollapseDirective;
-
-  ngAfterViewInit(): void {
-    this.collapse.toggle();
-  }
 }
