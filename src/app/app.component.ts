@@ -1,4 +1,3 @@
-import { animate, group, query, style, transition, trigger } from '@angular/animations';
 import { Component, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MdbCollapseDirective } from 'mdb-angular-ui-kit';
