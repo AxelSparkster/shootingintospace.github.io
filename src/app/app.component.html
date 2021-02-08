@@ -15,7 +15,7 @@
       id="toggleThingTest"
       mdbCollapse
       #basicCollapse="mdbCollapse">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav mr-auto">
         <li>
           <a class="nav-link" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
         </li>
@@ -25,8 +25,13 @@
         <li>
           <a class="nav-link" routerLink="social" routerLinkActive="active" >Social</a>
         </li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto d-flex flex-row">
         <li>
-          <a class="nav-link" href="https://trello.com/b/CtYfAAPA/shootingintospace" target="_blank">Trello</a>
+          <a class="nav-link" style="display: inline-block;" href="https://trello.com/b/CtYfAAPA/shootingintospace" target="_blank">
+            <img height="20px" style=" vertical-align: middle;" src="../assets/trello-mark-white.png" alt="triangle with equal sides" srcset="../assets/trello-mark-white.svg">
+          </a>
         </li>
       </ul>
     </div>
