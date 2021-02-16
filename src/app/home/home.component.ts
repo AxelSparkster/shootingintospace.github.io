@@ -1,32 +1,31 @@
 import { Component, OnInit } from '@angular/core';
-import { tadaAnimation } from 'angular-animations';
+import { rotateAnimation, pulseAnimation } from 'angular-animations';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   animations: [
-    tadaAnimation()
+    rotateAnimation({ duration: 4000, delay: 100, degrees: 360 }),
+    pulseAnimation({duration: 5000, delay: 100, scale: 1.1})
   ]
 })
 export class HomeComponent implements OnInit {
-  animState = false;
-  animating = false;
+  starState = false;
+  ringState = false;
 
   constructor() { }
 
   ngOnInit(): void {
+    this.starState = !this.starState;
+    this.ringState = !this.ringState;
   }
 
-  animDone(): void {
-    if (this.animating) {
-      this.animState = !this.animState;
-    }
+  starAnimDone(): void {
+    this.starState = !this.starState;
   }
 
-  toggleAnimation(): void {
-    this.animating = !this.animating;
-    this.animState = !this.animState;
-    console.log('Animation toggled.' + this.animating);
+  ringAnimDone(): void {
+    this.ringState = !this.ringState;
   }
 }

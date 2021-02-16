@@ -3,8 +3,8 @@
 
   <div class="logo">
     <div class="starcircle">
-      <img class="star" src="../../assets/star.svg">
-      <img class="ring" src="../../assets/ring2.svg">
+      <img class="star" src="../../assets/star.svg" [@rotate]="starState" (@rotate.done)="starAnimDone()">
+      <img class="ring" src="../../assets/ring2.svg" [@pulse]="ringState" (@pulse.done)="ringAnimDone()">
     </div>
     <div>
       <p class="logotext-topline" style="font-family: Kanit, sans-serif; color: #fff; font-weight: 100; font-size: 1.5em;">shooting into</p>
