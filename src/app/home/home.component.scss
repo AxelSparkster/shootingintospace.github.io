@@ -58,3 +58,42 @@
     font-weight: 900;
     font-size: 5em;
 }
+
+@media only screen and (max-width: 600px) {
+    .star {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+    }
+
+    .ring {
+        position: absolute;
+        height: 75px;
+        height: 75px;
+    }
+
+    .starcircle {
+        height: 100px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logotext-topline {
+        padding-top: 5px;
+        margin-bottom: -22px;
+        font-family: 'Kanit i100', sans-serif;
+        color: #fff;
+        font-weight: 100;
+        font-size: 0.75em;
+    }
+    
+    .logotext-bottomline {
+        margin: 0px;
+        color: #fff;
+        font-family: 'Kanit i900', sans-serif;
+        font-weight: 900;
+        font-size: 2.5em;
+    }
+}
