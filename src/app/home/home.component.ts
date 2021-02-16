@@ -6,7 +6,7 @@ import { rotateAnimation, pulseAnimation } from 'angular-animations';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   animations: [
-    rotateAnimation({ duration: 4000, delay: 100, degrees: 360 }),
+    rotateAnimation({ duration: 4000, delay: 100, degrees: -360 }),
     pulseAnimation({duration: 5000, delay: 100, scale: 1.1})
   ]
 })
