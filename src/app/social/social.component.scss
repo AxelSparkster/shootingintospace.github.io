@@ -1,9 +1,15 @@
-.bg {
+.outer-container {
     background-image: url("../../assets/39610.jpg");
     background-size: cover;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
+} 
+
+.inner-container {
+    height: 100vh;
+    width: 50vw;
+    color: white;
 } 
 
 h3 {
