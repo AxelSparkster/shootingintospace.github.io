@@ -22,6 +22,9 @@ github_username:  AxelSparkster
 minimal_mistakes_skin: contrast
 search: true
 
+url: "https://shootinginto.space"
+baseurl: "/blog"
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
