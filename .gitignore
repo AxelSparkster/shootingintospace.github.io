@@ -2,7 +2,7 @@
 node_modules
 dist/
 
-
+# Jekyll-related stuff
 _site
 .sass-cache
 .jekyll-cache
