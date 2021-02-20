@@ -126,11 +126,7 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {
-            "cname": "shootinginto.space",
-            "name": "Axel Sparkster",
-            "email": "axelsparkster@gmail.com"
-          }
+          "options": {}
         }
       }
     }
